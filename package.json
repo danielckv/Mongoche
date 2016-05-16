@@ -1,0 +1,38 @@
+{
+  "name": "mongoche",
+  "version": "1.0.1",
+  "author": "Daniel Chernenkov",
+  "description": "Caching layer for MongoDB by Memcache, supporting both single and clustered Memcached servers through consistent hashing and failover/failure",
+  "main": "index",
+  "keywords": [
+    "cache",
+    "client",
+    "cluster",
+    "failover",
+    "hashing",
+    "membase",
+    "memcache",
+    "memcached",
+    "mongodb",
+    "nosql"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/3rd-Eden/node-memcached.git"
+  },
+  "dependencies": {
+    "hashring": "3.2.x",
+    "jackpot": ">=0.0.6",
+    "memcached": "^2.2.1",
+    "mongodb": "latest"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "pre-commit": "*"
+  },
+  "scripts": {
+    "test": "mocha $(find test -name '*.test.js')"
+  }
+}
